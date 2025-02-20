@@ -25,6 +25,7 @@ h1 {
 }
 
 .calculator form input {
+  position: relative;
   border: 0;
   outline: 0;
   width: 40px;
@@ -37,6 +38,8 @@ h1 {
   cursor: pointer;
   margin: 20px;
   background: linear-gradient(90deg, #2d353f, #526174);
+  background-color: #2d353f;
+  margin-bottom: 15px;
 }
 
 .calculator form .display {
