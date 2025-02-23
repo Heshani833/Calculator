@@ -8,14 +8,14 @@ body {
 .container {
   width: 100%;
   height: 100vh;
-  background: white;
+  background: #1a1f26;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .calculator {
-  background: #2d353f;
+  background: #1a1f26;
   padding: 20px;
   border-radius: 10px;
 }
@@ -24,18 +24,21 @@ body {
   position: relative;
   border: 0;
   outline: 0;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 10px;
-  box-shadow: -8px -8px 15px rgba(0, 0, 0, 0.2);
-  background: transparent;
-  font-size: 20px;
+  background: linear-gradient(145deg, #3b4652, #2d353f);
+  box-shadow: 5px 5px 10px #1a1f26, -5px -5px 10px #4a5a6e;
+  font-size: 22px;
   color: #67e6dc;
   cursor: pointer;
-  margin: 20px;
-  background: linear-gradient(90deg, #2d353f, #526174);
-  background-color: #2d353f;
-  margin-bottom: 15px;
+  margin: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.calculator form input:active {
+  box-shadow: inset 3px 3px 6px #1a1f26, inset -3px -3px 6px #4a5a6e;
+  transform: translateY(2px);
 }
 
 .calculator form .display {
@@ -56,5 +59,5 @@ body {
 }
 
 form input.btnOperator {
-  color: rgb(0, 43, 43);
+  color: lightgray;
 }
